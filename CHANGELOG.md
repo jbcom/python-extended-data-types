@@ -2,6 +2,314 @@
 
 <!-- version list -->
 
+## v5.3.0 (2025-12-23)
+
+### Bug Fixes
+
+- **edt**: Remove inappropriate ecosystem-specific imports from public API
+  ([#64](https://github.com/jbcom/python-extended-data-types/pull/64),
+  [`57f8fbd`](https://github.com/jbcom/python-extended-data-types/commit/57f8fbd5ed8110dfac2c73cd870e576f133d9780))
+
+### Chores
+
+- Centralize AI agent instructions with Ruler
+  ([#64](https://github.com/jbcom/python-extended-data-types/pull/64),
+  [`57f8fbd`](https://github.com/jbcom/python-extended-data-types/commit/57f8fbd5ed8110dfac2c73cd870e576f133d9780))
+
+- Initial .cursor/environment.json from jbcom-control-center
+  ([`c2ac3ef`](https://github.com/jbcom/python-extended-data-types/commit/c2ac3ef28190e5a20b7efae3f69da1dd9d7727f2))
+
+- Initial .github/workflows/docs.yml from jbcom-control-center
+  ([`67d3796`](https://github.com/jbcom/python-extended-data-types/commit/67d379668c04b81b519f1bfe7ff2cdff1d1d79c6))
+
+- Initial docs/.nojekyll from jbcom-control-center
+  ([`094bc9f`](https://github.com/jbcom/python-extended-data-types/commit/094bc9ff977bef878d355d5c32d277bcccc98a37))
+
+- Initial docs/_static/custom.css from jbcom-control-center
+  ([`7342c5d`](https://github.com/jbcom/python-extended-data-types/commit/7342c5da4b38fdeb658aa6c49f5ef40c116afc21))
+
+- Initial docs/_templates/.gitkeep from jbcom-control-center
+  ([`8a8b7f3`](https://github.com/jbcom/python-extended-data-types/commit/8a8b7f36445918bc703348325f0c55dc37073a0c))
+
+- Initial docs/api/index.rst from jbcom-control-center
+  ([`6ea4586`](https://github.com/jbcom/python-extended-data-types/commit/6ea45861f59b28a546f8fa7053031ea462e9cb77))
+
+- Initial docs/api/modules.rst from jbcom-control-center
+  ([`124f796`](https://github.com/jbcom/python-extended-data-types/commit/124f796b952d45f6cb1f49c06effb80537ffc301))
+
+- Initial docs/conf.py from jbcom-control-center
+  ([`74d8605`](https://github.com/jbcom/python-extended-data-types/commit/74d8605ba6685bb854dd0566aa3879e2838b4415))
+
+- Initial docs/development/contributing.md from jbcom-control-center
+  ([`7fbd1a6`](https://github.com/jbcom/python-extended-data-types/commit/7fbd1a639b42092ba51a8c8a75b28d74edb430c6))
+
+- Initial docs/getting-started/installation.md from jbcom-control-center
+  ([`0de6c35`](https://github.com/jbcom/python-extended-data-types/commit/0de6c35b5a788c1ee5264752c91f45497bb581f5))
+
+- Initial docs/getting-started/quickstart.md from jbcom-control-center
+  ([`96a506e`](https://github.com/jbcom/python-extended-data-types/commit/96a506eada27a93c7345c0044d72dc3c5d6508a3))
+
+- Initial docs/index.rst from jbcom-control-center
+  ([`3d0f397`](https://github.com/jbcom/python-extended-data-types/commit/3d0f397a5e92a642c982161b65c3490ffbd06007))
+
+- Initial docs/Makefile from jbcom-control-center
+  ([`0a62e9f`](https://github.com/jbcom/python-extended-data-types/commit/0a62e9fd6a24472f3cc19c4d26bc79e65f4130b3))
+
+- Simplify dependabot config - direct push mode (no PRs)
+  ([`6f19604`](https://github.com/jbcom/python-extended-data-types/commit/6f196048d70c0352e85ca71569c4350db7d66c3b))
+
+- Sync .cursor/rules/00-fundamentals.mdc from jbcom-control-center
+  ([`afae361`](https://github.com/jbcom/python-extended-data-types/commit/afae36116e26ca15d3c46466f6a85ccb921033d8))
+
+- Sync .cursor/rules/00-fundamentals.mdc from jbcom-control-center
+  ([`b5c57b4`](https://github.com/jbcom/python-extended-data-types/commit/b5c57b47a646c512e8a314937f3973134d5ec41b))
+
+- Sync .cursor/rules/01-pr-workflow.mdc from jbcom-control-center
+  ([`3eb5e04`](https://github.com/jbcom/python-extended-data-types/commit/3eb5e0470a734a0262c56ac316d7dcd2fa94ef03))
+
+- Sync .cursor/rules/02-memory-bank.mdc from jbcom-control-center
+  ([`d7b41bd`](https://github.com/jbcom/python-extended-data-types/commit/d7b41bd8041ec74cf9d9228af9aa99a70c3d1924))
+
+- Sync .cursor/rules/02-memory-bank.mdc from jbcom-control-center
+  ([`5de60e9`](https://github.com/jbcom/python-extended-data-types/commit/5de60e90f3dd0394a633e89e0f5cd48dc5e9baf2))
+
+- Sync .cursor/rules/ci.mdc from jbcom-control-center
+  ([`bd96b19`](https://github.com/jbcom/python-extended-data-types/commit/bd96b19ad582bd6477f718be41d748a6914c39b7))
+
+- Sync .cursor/rules/python.mdc from jbcom-control-center
+  ([`dc6c6f1`](https://github.com/jbcom/python-extended-data-types/commit/dc6c6f1e16d1b4ea2ed140ee16b323f7295479a7))
+
+- Sync .cursor/rules/releases.mdc from jbcom-control-center
+  ([`d8c1ee4`](https://github.com/jbcom/python-extended-data-types/commit/d8c1ee4ad2a0b3e27cd9ba647ce625e2370d6953))
+
+- Sync .cursor/rules/releases.mdc from jbcom-control-center
+  ([`dddecc9`](https://github.com/jbcom/python-extended-data-types/commit/dddecc99e247dd6733a8ec2470b1b6d12c15d5b7))
+
+- Sync .github/workflows/claude-code.yml from jbcom-control-center
+  ([`02b71a2`](https://github.com/jbcom/python-extended-data-types/commit/02b71a2944200bbc9631a354aab398ae4a7ec326))
+
+- Sync .github/workflows/claude-code.yml from jbcom-control-center
+  ([`72e2e67`](https://github.com/jbcom/python-extended-data-types/commit/72e2e67441de46f6d9b4ad10e521542b28c1144b))
+
+- Sync files from jbcom/.github ([#4](https://github.com/jbcom/python-extended-data-types/pull/4),
+  [`d4132f5`](https://github.com/jbcom/python-extended-data-types/commit/d4132f51df75f010a0f864b7458e1bfffde9f20a))
+
+- Sync settings.yml from control-center
+  ([`42a8811`](https://github.com/jbcom/python-extended-data-types/commit/42a8811bcb9184527c50f035914fa7ed6781d8e5))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`0978536`](https://github.com/jbcom/python-extended-data-types/commit/0978536a0742d38237415fb287eb00c55a5e463f))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`1eb6e76`](https://github.com/jbcom/python-extended-data-types/commit/1eb6e7692398c2ac677b77aaeec949c9bbb5dc0d))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`374215a`](https://github.com/jbcom/python-extended-data-types/commit/374215aea8dd9a3ea5a8479bce7ebfbe202f32ec))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`803145e`](https://github.com/jbcom/python-extended-data-types/commit/803145ec9a2e267bd94c4c50ed84e49aeab3e32e))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`eced1b6`](https://github.com/jbcom/python-extended-data-types/commit/eced1b61761642be7d143beb1d19fb9756408b77))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`340e5d0`](https://github.com/jbcom/python-extended-data-types/commit/340e5d008392855d5d1e807d4bb533117221af90))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`0183b10`](https://github.com/jbcom/python-extended-data-types/commit/0183b1081796ea981ccf4602b363b64c14f859ab))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`6385103`](https://github.com/jbcom/python-extended-data-types/commit/638510338be0353c62bff5c330e3b07b0d13ba54))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`0fda5c0`](https://github.com/jbcom/python-extended-data-types/commit/0fda5c0ab7419773371b000a9c2b89ec8ccedaab))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`465b343`](https://github.com/jbcom/python-extended-data-types/commit/465b343ea4e276275dbb666a4c25f60d430515c0))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`10bf6c8`](https://github.com/jbcom/python-extended-data-types/commit/10bf6c8655f79fe66d88a29f8edf5109e9645959))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`41290ee`](https://github.com/jbcom/python-extended-data-types/commit/41290eeb09acb23efd302f6112fbe67eca351d03))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`e7d36b5`](https://github.com/jbcom/python-extended-data-types/commit/e7d36b52ba6d089601ec211af74cde60b8d9dcdb))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`a37730f`](https://github.com/jbcom/python-extended-data-types/commit/a37730f5f333b3b3c003bd0cecb517db2cd0ad35))
+
+- **init**: Created local 'CLAUDE.md' from remote 'repository-files/initial-only/CLAUDE.md'
+  ([`5c909a9`](https://github.com/jbcom/python-extended-data-types/commit/5c909a976817528783844f09fe585a3d83babdc7))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`fcc5379`](https://github.com/jbcom/python-extended-data-types/commit/fcc537916ae5e9ff9e1ecf0118d1ac2a80530c17))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`620ff0c`](https://github.com/jbcom/python-extended-data-types/commit/620ff0c56b0f83991693ec502ba54a0cbe09397f))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`fb4cb59`](https://github.com/jbcom/python-extended-data-types/commit/fb4cb595d68d8df2d368deab26af63215020fd89))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`9eadd53`](https://github.com/jbcom/python-extended-data-types/commit/9eadd53a9524319f6b56075881ea48206e37a392))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`597cb2e`](https://github.com/jbcom/python-extended-data-types/commit/597cb2e53cf42dfe2b9b823cb5cbc1cd9620bb61))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`0437777`](https://github.com/jbcom/python-extended-data-types/commit/0437777b6772242b7decc0ead6ab5a21d79b77e3))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`18c083b`](https://github.com/jbcom/python-extended-data-types/commit/18c083b09bb80b30cb24a7a24d9fbae1c419ed43))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`e7ace5e`](https://github.com/jbcom/python-extended-data-types/commit/e7ace5e6b2e0dcc3d033bc4feace55e751d60295))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`9c3ce68`](https://github.com/jbcom/python-extended-data-types/commit/9c3ce68307517b3b9bf65fa1573952cfb743089f))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`a24bf19`](https://github.com/jbcom/python-extended-data-types/commit/a24bf1986bc7b94830331e02c592f82315818cd7))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`18698a0`](https://github.com/jbcom/python-extended-data-types/commit/18698a017695699cb20ff23298fc934f2b78ccc9))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`5fe9ca6`](https://github.com/jbcom/python-extended-data-types/commit/5fe9ca629d854b65ad821e442a24297c195cff69))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`913c2d9`](https://github.com/jbcom/python-extended-data-types/commit/913c2d965ac30b9a9c5fe9e217f4918f1f22d0b0))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`3ab52c5`](https://github.com/jbcom/python-extended-data-types/commit/3ab52c5b7517ea69c6f1f0ea1056e3792173b430))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`c1bff9d`](https://github.com/jbcom/python-extended-data-types/commit/c1bff9d447698338b75cb7e02266d80e9980e941))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`d3e8412`](https://github.com/jbcom/python-extended-data-types/commit/d3e8412bd8fbecd80b70c869bfb3cdce33424353))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`847a1d5`](https://github.com/jbcom/python-extended-data-types/commit/847a1d5372f8a2294e7bab312c1b3bb9aec3906b))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`efec59e`](https://github.com/jbcom/python-extended-data-types/commit/efec59e77efdb544ef53356602c5b6cf314c5e9e))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`aa31dea`](https://github.com/jbcom/python-extended-data-types/commit/aa31dea2fa3514f9a540450ea3688bf9c3126b2a))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`dae598c`](https://github.com/jbcom/python-extended-data-types/commit/dae598c8bed85874c36b304c50ff4020db7aa07d))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`8609e09`](https://github.com/jbcom/python-extended-data-types/commit/8609e09a327448939ad45e6bb499c71f77544427))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`216c982`](https://github.com/jbcom/python-extended-data-types/commit/216c982302f5c9641b70317a67b64fa4a9757670))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`cc0b8db`](https://github.com/jbcom/python-extended-data-types/commit/cc0b8dbd443463b15678c05e2800a27d933f5935))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`d5fbfb9`](https://github.com/jbcom/python-extended-data-types/commit/d5fbfb99f45305633172b12c92faf8a8684366d8))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`88311af`](https://github.com/jbcom/python-extended-data-types/commit/88311afbc91f004b8ee0c2a6c0912b560a6ea867))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`30363fb`](https://github.com/jbcom/python-extended-data-types/commit/30363fbb64acfead40ab718695d740e61ba1b70b))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`30f30c3`](https://github.com/jbcom/python-extended-data-types/commit/30f30c3bb04a953f2671276d664c5ac4d24b04e1))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`9b9d01e`](https://github.com/jbcom/python-extended-data-types/commit/9b9d01e4c680dc1db0952d91a7419407fbb0bb06))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`39e83ec`](https://github.com/jbcom/python-extended-data-types/commit/39e83ec7f6783d1a4c4763f04ab6d89c07719e35))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`ff70e2a`](https://github.com/jbcom/python-extended-data-types/commit/ff70e2afe59c466e81b6243a0d04e1bc9abab908))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`c06aa95`](https://github.com/jbcom/python-extended-data-types/commit/c06aa95eda90835d28f41640e48e88ac31e30469))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`e1fc219`](https://github.com/jbcom/python-extended-data-types/commit/e1fc219188bbb6e5874b9e83c4f0f2d2d86e8c7a))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`d65390b`](https://github.com/jbcom/python-extended-data-types/commit/d65390b29be4879a64b700b33fa1639b3e149fdf))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`11119f3`](https://github.com/jbcom/python-extended-data-types/commit/11119f369b0c5dc9610eebab914f88f42aa1f59f))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`88afea3`](https://github.com/jbcom/python-extended-data-types/commit/88afea3f682b40e8421036f4214c4c26688438cd))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`7342ee6`](https://github.com/jbcom/python-extended-data-types/commit/7342ee62c4ca6f30946fe10738dfd612b22fbc55))
+
+- **sync**: Synced local '.github/workflows/' with remote
+  'repository-files/always-sync/.github/workflows/'
+  ([`edfa9d1`](https://github.com/jbcom/python-extended-data-types/commit/edfa9d11990a1a64836636d16adbead73b3ffb5d))
+
+- **sync**: Synced local '.github/workflows/' with remote
+  'repository-files/always-sync/.github/workflows/'
+  ([`9428030`](https://github.com/jbcom/python-extended-data-types/commit/9428030571dba79e0452996a2266b3877512e096))
+
+- **sync**: Synced local '.github/workflows/' with remote
+  'repository-files/always-sync/.github/workflows/'
+  ([`ca53334`](https://github.com/jbcom/python-extended-data-types/commit/ca5333424a727b6b1402d83c9235f92ac43ee61e))
+
+- **sync**: Synced local '.github/workflows/' with remote
+  'repository-files/always-sync/.github/workflows/'
+  ([`3b2006c`](https://github.com/jbcom/python-extended-data-types/commit/3b2006c2e9eee699cba5796e7fc9905e3db4fb43))
+
+### Features
+
+- **edt**: Add comprehensive ecosystem foundation specification
+  ([#64](https://github.com/jbcom/python-extended-data-types/pull/64),
+  [`57f8fbd`](https://github.com/jbcom/python-extended-data-types/commit/57f8fbd5ed8110dfac2c73cd870e576f133d9780))
+
+- **edt**: Ecosystem foundation and Ruler AI agent setup
+  ([#64](https://github.com/jbcom/python-extended-data-types/pull/64),
+  [`57f8fbd`](https://github.com/jbcom/python-extended-data-types/commit/57f8fbd5ed8110dfac2c73cd870e576f133d9780))
+
+- **settings**: Add ecosystem-specific settings with Ruff linter
+  ([`c19a4f4`](https://github.com/jbcom/python-extended-data-types/commit/c19a4f46581622f61d8d72798983819d346a1814))
+
+
 ## v5.2.1 (2025-12-07)
 
 ### Bug Fixes
