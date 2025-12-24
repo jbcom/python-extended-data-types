@@ -1,10 +1,10 @@
 # Extended Data Types
 
-[![Extended Data Types Logo](docs/_static/logo.png)](https://github.com/jbcom/extended-data-types)
+[![Extended Data Types Logo](docs/_static/logo.png)](https://github.com/jbcom/python-extended-data-types)
 
 *🐍 Supercharge your Python data types! 🚀*
 
-[![CI Status](https://github.com/jbcom/extended-data-types/workflows/CI/badge.svg)](https://github.com/jbcom/extended-data-types/actions?query=workflow%3ACI)
+[![CI Status](https://github.com/jbcom/python-extended-data-types/workflows/CI/badge.svg)](https://github.com/jbcom/python-extended-data-types/actions?query=workflow%3ACI)
 [![Documentation Status](https://readthedocs.org/projects/extended-data-types/badge/?version=latest)](https://extended-data-types.readthedocs.io/en/latest/?badge=latest)
 [![PyPI Package latest release](https://img.shields.io/pypi/v/extended-data-types.svg)](https://pypi.org/project/extended-data-types/)
 [![Supported versions](https://img.shields.io/pypi/pyversions/extended-data-types.svg)](https://pypi.org/project/extended-data-types/)
@@ -66,7 +66,7 @@ For more usage examples, see the [Usage](https://extended-data-types.readthedocs
 
 ## Contributing
 
-Contributions are welcome! Please see the [Contributing Guidelines](https://github.com/jbcom/extended-data-types/blob/main/CONTRIBUTING.md) for more information.
+Contributions are welcome! Please see the [Contributing Guidelines](https://github.com/jbcom/python-extended-data-types/blob/main/CONTRIBUTING.md) for more information.
 
 ## Credit
 
@@ -77,6 +77,6 @@ Extended Data Types is written and maintained by [Jon Bogaty](mailto:jon@jonboga
 - [**Get Help**](https://stackoverflow.com/questions/tagged/extended-data-types) (use the *extended-data-types* tag on
   Stack Overflow)
 - [**PyPI**](https://pypi.org/project/extended-data-types/)
-- [**GitHub**](https://github.com/jbcom/extended-data-types)
+- [**GitHub**](https://github.com/jbcom/python-extended-data-types)
 - [**Documentation**](https://extended-data-types.readthedocs.io/en/latest/)
-- [**Changelog**](https://github.com/jbcom/extended-data-types/tree/main/CHANGELOG.md)
+- [**Changelog**](https://github.com/jbcom/python-extended-data-types/tree/main/CHANGELOG.md)

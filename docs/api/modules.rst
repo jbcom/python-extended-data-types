@@ -1,10 +1,10 @@
 Modules
 =======
 
-.. TODO: Replace PACKAGE_NAME with your actual package name
+.. Updated PACKAGE_NAME with extended_data_types
 
 .. autosummary::
    :toctree: _autosummary
    :recursive:
 
-   PACKAGE_NAME
+   extended_data_types

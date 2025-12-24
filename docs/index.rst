@@ -1,11 +1,11 @@
-.. PACKAGE_NAME documentation master file
+.. extended-data-types documentation master file
    Synced from jbcom-control-center - customize for your project
 
 =======================================
-PACKAGE_NAME Documentation
+extended-data-types Documentation
 =======================================
 
-.. TODO: Add your project description here
+Extended Data Types is a Python utility library providing enhanced functionality for working with common data formats and types. It serves as a reliable, typed utility layer for Python applications.
 
 .. toctree::
    :maxdepth: 2

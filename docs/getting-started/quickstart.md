@@ -1,15 +1,15 @@
 # Quickstart
 
-This guide will help you get started with PACKAGE_NAME.
+This guide will help you get started with extended-data-types.
 
 ## Basic Usage
 
 ```python
-# TODO: Add basic usage example
-from PACKAGE_NAME import example
+# Basic usage example
+from extended_data_types import string_transformations
 
-result = example.do_something()
-print(result)
+result = string_transformations.to_pascal_case("hello_world")
+print(result)  # HelloWorld
 ```
 
 ## Next Steps
