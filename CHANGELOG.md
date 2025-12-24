@@ -2,6 +2,79 @@
 
 <!-- version list -->
 
+## v5.3.1 (2025-12-24)
+
+### Bug Fixes
+
+- **ci**: Skip AI reviews for dependabot PRs to prevent secret failures
+  ([#11](https://github.com/extended-data-library/core/pull/11),
+  [`5fbf897`](https://github.com/extended-data-library/core/commit/5fbf897abbcf86102c9dca40bb143fae313390fa))
+
+### Chores
+
+- Sync ruler configuration ([#11](https://github.com/extended-data-library/core/pull/11),
+  [`5fbf897`](https://github.com/extended-data-library/core/commit/5fbf897abbcf86102c9dca40bb143fae313390fa))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`c92f1e7`](https://github.com/extended-data-library/core/commit/c92f1e71e6b906677b697a6ee39589281214ef37))
+
+- **init**: Created local '.cursor/Dockerfile' from remote
+  'repository-files/initial-only/.cursor/Dockerfile'
+  ([`3d59c98`](https://github.com/extended-data-library/core/commit/3d59c98bc860f354900b2581168e90ccb512aa9c))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`620a8b1`](https://github.com/extended-data-library/core/commit/620a8b189a9f83d2349e2f451db377acc7d2eaa7))
+
+- **init**: Created local '.cursor/environment.json' from remote
+  'repository-files/initial-only/.cursor/environment.json'
+  ([`76c02af`](https://github.com/extended-data-library/core/commit/76c02af6d3aa571c61c2c3ab1d1ce13445e929a8))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/always-sync/.cursor/'
+  ([`60d4c07`](https://github.com/extended-data-library/core/commit/60d4c07f6dc4f8afe7c011c991863e8a0689445e))
+
+- **sync**: Synced local '.cursor/' with remote 'repository-files/python/.cursor/'
+  ([`cfcfaf7`](https://github.com/extended-data-library/core/commit/cfcfaf77026914163832aa2e35dc55c91caa0652))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/always-sync/.github/copilot-instructions.md'
+  ([`d9ce62e`](https://github.com/extended-data-library/core/commit/d9ce62e42d1e1e52552a7dbfabd310f742de2edf))
+
+- **sync**: Synced local '.github/copilot-instructions.md' with remote
+  'repository-files/python/.github/copilot-instructions.md'
+  ([`a94db7c`](https://github.com/extended-data-library/core/commit/a94db7c934c1cb561a5e17ec7f8193933b58954b))
+
+- **sync**: Synced local '.github/settings.yml' with remote
+  'repository-files/always-sync/.github/settings.yml'
+  ([`0d22734`](https://github.com/extended-data-library/core/commit/0d227342a7c4d6e7d854d07df915e1877b09a88e))
+
+### Continuous Integration
+
+- Bump actions/checkout from 4 to 6 ([#13](https://github.com/extended-data-library/core/pull/13),
+  [`00b2206`](https://github.com/extended-data-library/core/commit/00b22066298132b59f77c7537b64768bae7d0235))
+
+- Bump actions/download-artifact from 4 to 7
+  ([#11](https://github.com/extended-data-library/core/pull/11),
+  [`5fbf897`](https://github.com/extended-data-library/core/commit/5fbf897abbcf86102c9dca40bb143fae313390fa))
+
+- Bump actions/setup-python from 5 to 6 ([#9](https://github.com/extended-data-library/core/pull/9),
+  [`40f6644`](https://github.com/extended-data-library/core/commit/40f6644a74c5bb0377f9b59c47f2342f9a37a722))
+
+- Bump actions/upload-pages-artifact from 3 to 4
+  ([#12](https://github.com/extended-data-library/core/pull/12),
+  [`47a290e`](https://github.com/extended-data-library/core/commit/47a290ed4f4e749ca1022c28ebb4461243e36078))
+
+### Documentation
+
+- Fix documentation placeholders and improve deploy workflow
+  ([#15](https://github.com/extended-data-library/core/pull/15),
+  [`5577d94`](https://github.com/extended-data-library/core/commit/5577d94c3c7b2872f04bb78dc7ea9938e21bbb3f))
+
+- Update memory bank for fix/issue-6 ([#15](https://github.com/extended-data-library/core/pull/15),
+  [`5577d94`](https://github.com/extended-data-library/core/commit/5577d94c3c7b2872f04bb78dc7ea9938e21bbb3f))
+
+
 ## v5.3.0 (2025-12-23)
 
 ### Bug Fixes
