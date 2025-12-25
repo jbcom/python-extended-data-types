@@ -109,21 +109,32 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     needs: [build, test, lint]
     runs-on: ubuntu-latest
-
+    
+    # Request elevated permissions for this job
     permissions:
-      contents: write
-      id-token: write
+      contents: write      # To push commits and tags
+      id-token: write      # For PyPI trusted publishing
+      pull-requests: write # To create release PRs if needed
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout with elevated token
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          token: ${{ secrets.CI_GITHUB_TOKEN }}
+          # Use the CI token that has bypass permissions
+          token: ${{ secrets.CI_GITHUB_TOKEN || github.token }}
+          persist-credentials: true
 
-      - name: Git config
+      - name: Configure Git with token in URL
+        env:
+          GH_TOKEN: ${{ secrets.CI_GITHUB_TOKEN || github.token }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Configure git credential helper to use the token
+          git config --global credential.helper store
+          echo "https://x-access-token:${GH_TOKEN}@github.com" > ~/.git-credentials
 
       - uses: hynek/setup-cached-uv@v2
 
@@ -133,24 +144,33 @@ jobs:
       - name: Check if release needed
         id: check
         run: |
-          NEW_VERSION=$(semantic-release --noop version --print 2>/dev/null || true)
-          if [ -n "$NEW_VERSION" ]; then
+          NEW_VERSION=$(semantic-release --noop version --print 2>/dev/null || echo "")
+          if [ -n "$NEW_VERSION" ] && [ "$NEW_VERSION" != "No release will be made" ]; then
             echo "should_release=true" >> $GITHUB_OUTPUT
             echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            echo "📦 Will release version: $NEW_VERSION"
           else
             echo "should_release=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No release needed - no conventional commits since last release"
           fi
 
-      - name: Release version
+      - name: Run semantic-release
         if: steps.check.outputs.should_release == 'true'
         env:
-          GH_TOKEN: ${{ secrets.CI_GITHUB_TOKEN }}
-        run: semantic-release version
+          GH_TOKEN: ${{ secrets.CI_GITHUB_TOKEN || github.token }}
+        run: |
+          # Run semantic-release which will:
+          # 1. Bump version in files
+          # 2. Update CHANGELOG
+          # 3. Create commit
+          # 4. Create and push tag
+          semantic-release version --skip-build
 
       - name: Build packages with new version
         if: steps.check.outputs.should_release == 'true'
         run: |
           uv build
+          echo "📦 Built packages:"
           ls -lh dist/
 
       - name: Publish to PyPI
@@ -159,12 +179,23 @@ jobs:
         with:
           password: ${{ secrets.PYPI_TOKEN }}
           skip-existing: true
+          verbose: true
 
       - name: Create GitHub Release
         if: steps.check.outputs.should_release == 'true'
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ steps.check.outputs.version }}
-          name: v${{ steps.check.outputs.version }}
-          files: dist/*
-          token: ${{ secrets.CI_GITHUB_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.CI_GITHUB_TOKEN || github.token }}
+        run: |
+          NEW_VERSION="${{ steps.check.outputs.version }}"
+          
+          # Extract changelog for this version
+          CHANGELOG_SECTION=$(awk "/^## v?${NEW_VERSION}/,/^## v?[0-9]/" CHANGELOG.md | head -n -1 || echo "See CHANGELOG.md for details")
+          
+          # Create GitHub release
+          gh release create "v${NEW_VERSION}" \
+            --title "Release v${NEW_VERSION}" \
+            --notes "${CHANGELOG_SECTION}" \
+            --verify-tag \
+            dist/*
+          
+          echo "✅ Released v${NEW_VERSION}"
