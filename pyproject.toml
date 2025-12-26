@@ -223,6 +223,8 @@ ignore_missing_imports = true
 # Python Semantic Release configuration
 [tool.semantic_release]
 # Build happens in CI, not in semantic-release
+build_command = ""
+pypi = false
 commit_message = "chore(release): v{version} [skip ci]"
 allow_zero_version = true
 tag_format = "v{version}"
